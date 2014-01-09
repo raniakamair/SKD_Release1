@@ -1,0 +1,188 @@
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '+CMGL: 11,0,,58\r\n'
+[backend/att]: read: '0791429912999999A40C914299023234020000312082218353212C53D69D2563C1CBEE719ACD92D558E2F0993583B1C461369B25A3B1E2AC184B068BCD5AB2960C06\r\n'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[django.db.backends]: (0.001) SELECT `rapidsms_backend`.`id`, `rapidsms_backend`.`name` FROM `rapidsms_backend` WHERE `rapidsms_backend`.`name` = att ; args=('att',)
+[django.db.backends]: (0.001) SELECT `rapidsms_connection`.`id`, `rapidsms_connection`.`backend_id`, `rapidsms_connection`.`identity`, `rapidsms_connection`.`contact_id` FROM `rapidsms_connection` WHERE (`rapidsms_connection`.`identity` = +249920234320  AND `rapidsms_connection`.`backend_id` = 1 ); args=('+249920234320', 1)
+[django.db.backends]: (0.000) INSERT INTO `rapidsms_connection` (`backend_id`, `identity`, `contact_id`) VALUES (1, +249920234320, None); args=(1, '+249920234320', None)
+[router]: Incoming (+249920234320 via att): S,w,2,pencil,25,bag,30,ball,24,q,1,2013-2-20
+[router]: In filter phase
+[router]: In <app: SKD_app> app
+[router]: In <app: handlers> app
+[router]: In <app: ajax> app
+[router]: In <app: default> app
+[router]: In <app: messagelog> app
+[router]: In parse phase
+[router]: In <app: SKD_app> app
+[router]: In <app: handlers> app
+[router]: In <app: ajax> app
+[router]: In <app: default> app
+[router]: In <app: messagelog> app
+[django.db.backends]: (0.001) INSERT INTO `messagelog_message` (`contact_id`, `connection_id`, `direction`, `date`, `text`) VALUES (None, 1, I, 2013-02-28 12:38:07, S,w,2,pencil,25,bag,30,ball,24,q,1,2013-2-20); args=(None, 1, 'I', u'2013-02-28 12:38:07', u'S,w,2,pencil,25,bag,30,ball,24,q,1,2013-2-20')
+[router]: In handle phase
+[router]: In <app: SKD_app> app
+[app/SKD_app]: got message S,w,2,pencil,25,bag,30,ball,24,q,1,2013-2-20
+[django.db.backends]: (0.001) INSERT INTO `SKD_app_warehouse` (`warehouse_smsType`, `warehouse_state_id`, `warehouse_quality`, `warehouse_MsgTime`, `warehouse_ArvTime`) VALUES (S, 2, 1, 2013-02-28, 2013-02-20); args=(u'S', 2, 1, '2013-02-28', '2013-02-20')
+[django.db.backends]: (0.001) INSERT INTO `SKD_app_warehousetypes` (`warehouseTypes_Type`, `warehouseTypes_quantity`, `warehouseTypes_msgId_id`) VALUES (PENCIL, 25, 1); args=(u'PENCIL', 25, 1)
+[django.db.backends]: (0.001) INSERT INTO `SKD_app_warehousetypes` (`warehouseTypes_Type`, `warehouseTypes_quantity`, `warehouseTypes_msgId_id`) VALUES (BAG, 30, 1); args=(u'BAG', 30, 1)
+[django.db.backends]: (0.000) INSERT INTO `SKD_app_warehousetypes` (`warehouseTypes_Type`, `warehouseTypes_quantity`, `warehouseTypes_msgId_id`) VALUES (BALL, 24, 1); args=(u'BALL', 24, 1)
+[app/SKD_app]: responding with Your Message was recieved successfully
+[router]: Short-circuited
+[router]: In default phase
+[router]: Skipping phase
+[router]: Outgoing (+249920234320 via att): Your Message was recieved successfully
+[router]: Out outgoing phase
+[router]: Out <app: messagelog> app
+[django.db.backends]: (0.000) INSERT INTO `messagelog_message` (`contact_id`, `connection_id`, `direction`, `date`, `text`) VALUES (None, 1, O, 2013-02-28 12:38:08, Your Message was recieved successfully); args=(None, 1, 'O', u'2013-02-28 12:38:08', u'Your Message was recieved successfully')
+[router]: Out <app: default> app
+[router]: Out <app: ajax> app
+[router]: Out <app: handlers> app
+[router]: Out <app: SKD_app> app
+[backend/att]: write: 'AT+CMGS=48\r'
+[backend/att]: read: '\r\n'
+[backend/att]: write: '0011000C914299023234020000AA26D9775D0E6A96E7F3F0B90CBA87E72079799C2EDBCB64D0BC3E1E97E773739DCDCE03\x1a'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '+CMS ERROR: 500\r\n'
+[backend/att]: write: '\x1b'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'

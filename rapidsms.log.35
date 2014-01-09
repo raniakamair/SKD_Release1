@@ -1,0 +1,167 @@
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '+CMGL: 18,0,,86\r\n'
+[backend/att]: read: '0791429921207082240C914219322642200000313041812013214C72569B9563C158F0B27B9C66CF5938188C052FBBE72C1B0CC61287CF73D60C066315E5E179593E67D5603096FB4D2F8BDFEFF59C3583C15851568C2583C566AD582B07\r\n'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[django.db.backends]: (0.001) SELECT `rapidsms_backend`.`id`, `rapidsms_backend`.`name` FROM `rapidsms_backend` WHERE `rapidsms_backend`.`name` = att ; args=('att',)
+[django.db.backends]: (0.001) SELECT `rapidsms_connection`.`id`, `rapidsms_connection`.`backend_id`, `rapidsms_connection`.`identity`, `rapidsms_connection`.`contact_id` FROM `rapidsms_connection` WHERE (`rapidsms_connection`.`identity` = +249123622402  AND `rapidsms_connection`.`backend_id` = 1 ); args=('+249123622402', 1)
+[django.db.backends]: (0.000) INSERT INTO `rapidsms_connection` (`backend_id`, `identity`, `contact_id`) VALUES (1, +249123622402, None); args=(1, '+249123622402', None)
+[router]: Incoming (+249123622402 via att): r,m,9,0,pencils,800,pens,600,bags,300,Erasers,500,notebooks,300,Q,1,2013-1-9
+[router]: In filter phase
+[router]: In <app: SKD_app> app
+[router]: In <app: handlers> app
+[router]: In <app: ajax> app
+[router]: In <app: default> app
+[router]: In <app: messagelog> app
+[router]: In parse phase
+[router]: In <app: SKD_app> app
+[router]: In <app: handlers> app
+[router]: In <app: ajax> app
+[router]: In <app: default> app
+[router]: In <app: messagelog> app
+[django.db.backends]: (0.001) INSERT INTO `messagelog_message` (`contact_id`, `connection_id`, `direction`, `date`, `text`) VALUES (None, 1, I, 2013-03-14 18:02:08, r,m,9,0,pencils,800,pens,600,bags,300,Erasers,500,notebooks,300,Q,1,2013-1-9); args=(None, 1, 'I', u'2013-03-14 18:02:08', u'r,m,9,0,pencils,800,pens,600,bags,300,Erasers,500,notebooks,300,Q,1,2013-1-9')
+[router]: In handle phase
+[router]: In <app: SKD_app> app
+[app/SKD_app]: got message r,m,9,0,pencils,800,pens,600,bags,300,Erasers,500,notebooks,300,Q,1,2013-1-9
+[django.db.backends]: (0.001) INSERT INTO `SKD_app_state` (`state_smsType`, `state_state_id`, `state_locality_id`, `state_quality`, `state_ArvTime`, `state_MsgTime`) VALUES (R, 9, 0, 1, 2013-01-09, 2013-03-14); args=(u'R', 9, 0, 1, '2013-01-09', '2013-03-14')
+[django.db.backends]: (0.000) INSERT INTO `SKD_app_statetypes` (`stateTypes_Type`, `stateTypes_quantity`, `stateTypes_msgId_id`) VALUES (PENCILS, 800, 19); args=(u'PENCILS', 800, 19)
+[django.db.backends]: (0.001) INSERT INTO `SKD_app_statetypes` (`stateTypes_Type`, `stateTypes_quantity`, `stateTypes_msgId_id`) VALUES (PENS, 600, 19); args=(u'PENS', 600, 19)
+[django.db.backends]: (0.001) INSERT INTO `SKD_app_statetypes` (`stateTypes_Type`, `stateTypes_quantity`, `stateTypes_msgId_id`) VALUES (BAGS, 300, 19); args=(u'BAGS', 300, 19)
+[django.db.backends]: (0.001) INSERT INTO `SKD_app_statetypes` (`stateTypes_Type`, `stateTypes_quantity`, `stateTypes_msgId_id`) VALUES (ERASERS, 500, 19); args=(u'ERASERS', 500, 19)
+[django.db.backends]: (0.001) INSERT INTO `SKD_app_statetypes` (`stateTypes_Type`, `stateTypes_quantity`, `stateTypes_msgId_id`) VALUES (NOTEBOOKS, 300, 19); args=(u'NOTEBOOKS', 300, 19)
+[app/SKD_app]: responding with Your Message was recieved successfully
+[router]: Short-circuited
+[router]: In default phase
+[router]: Skipping phase
+[router]: Outgoing (+249123622402 via att): Your Message was recieved successfully
+[router]: Out outgoing phase
+[router]: Out <app: messagelog> app
+[django.db.backends]: (0.001) INSERT INTO `messagelog_message` (`contact_id`, `connection_id`, `direction`, `date`, `text`) VALUES (None, 1, O, 2013-03-14 18:02:08, Your Message was recieved successfully); args=(None, 1, 'O', u'2013-03-14 18:02:08', u'Your Message was recieved successfully')
+[router]: Out <app: default> app
+[router]: Out <app: ajax> app
+[router]: Out <app: handlers> app
+[router]: Out <app: SKD_app> app
+[backend/att]: write: 'AT+CMGS=48\r'
+[backend/att]: read: '\r\n'
+[backend/att]: write: '0011000C914219322642200000AA26D9775D0E6A96E7F3F0B90CBA87E72079799C2EDBCB64D0BC3E1E97E773739DCDCE03\x1a'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '+CMS ERROR: 500\r\n'
+[backend/att]: write: '\x1b'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[router]: Caught KeyboardInterrupt
+[router]: Stopping...
+[backend/att]: debug: Disconnecting
+[router]: backend pyGSM terminated normally
+[router]: backend <backend: message_tester> terminated normally
+[router]: Stopped
+[django.db.backends]: (0.001) SELECT `rapidsms_backend`.`name` FROM `rapidsms_backend`; args=()
+[django.db.backends]: (0.001) SELECT `rapidsms_app`.`module` FROM `rapidsms_app`; args=()
+[router]: Starting RapidSMS...
+[router]: starting backend
+[router]: starting backend
+[backend/att]: Connecting and booting via pyGSM...
+[app/handlers]: Registered: EchoHandler, PingHandler
+[backend/att]: debug: Booting
+[backend/att]: debug: Connecting
+[router]: Started
+[backend/att]: write: 'ATE0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMEE=1\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+WIND=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'ERROR\r\n'
+[backend/att]: write: 'AT+CSMS=1\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '+CSMS: 1,1,1\r\n'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGF=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CNMI=2,2,0,0,0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '+CMS ERROR: 303\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '+CMGL: 0,0,,86\r\n'

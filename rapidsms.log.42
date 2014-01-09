@@ -1,0 +1,176 @@
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[router]: Caught KeyboardInterrupt
+[router]: Stopping...
+[backend/att]: debug: Disconnecting
+[router]: backend pyGSM terminated normally
+[router]: backend <backend: message_tester> terminated normally
+[router]: Stopped
+[django.db.backends]: (0.001) SELECT `rapidsms_backend`.`name` FROM `rapidsms_backend`; args=()
+[django.db.backends]: (0.000) INSERT INTO `rapidsms_backend` (`name`) VALUES (att); args=('att',)
+[django.db.backends]: (0.001) INSERT INTO `rapidsms_backend` (`name`) VALUES (message_tester); args=('message_tester',)
+[django.db.backends]: (0.001) SELECT `rapidsms_app`.`module` FROM `rapidsms_app`; args=()
+[django.db.backends]: (0.000) INSERT INTO `rapidsms_app` (`module`, `active`) VALUES (django_nose, False); args=('django_nose', False)
+[django.db.backends]: (0.001) INSERT INTO `rapidsms_app` (`module`, `active`) VALUES (djtables, False); args=('djtables', False)
+[django.db.backends]: (0.001) INSERT INTO `rapidsms_app` (`module`, `active`) VALUES (rapidsms, False); args=('rapidsms', False)
+[django.db.backends]: (0.001) INSERT INTO `rapidsms_app` (`module`, `active`) VALUES (apps.SKD_app, False); args=('apps.SKD_app', False)
+[django.db.backends]: (0.000) INSERT INTO `rapidsms_app` (`module`, `active`) VALUES (django_php, False); args=('django_php', False)
+[django.db.backends]: (0.001) INSERT INTO `rapidsms_app` (`module`, `active`) VALUES (rapidsms.contrib.handlers, False); args=('rapidsms.contrib.handlers', False)
+[django.db.backends]: (0.001) INSERT INTO `rapidsms_app` (`module`, `active`) VALUES (rapidsms.contrib.ajax, False); args=('rapidsms.contrib.ajax', False)
+[django.db.backends]: (0.000) INSERT INTO `rapidsms_app` (`module`, `active`) VALUES (django.contrib.sites, False); args=('django.contrib.sites', False)
+[django.db.backends]: (0.001) INSERT INTO `rapidsms_app` (`module`, `active`) VALUES (django.contrib.auth, False); args=('django.contrib.auth', False)
+[django.db.backends]: (0.000) INSERT INTO `rapidsms_app` (`module`, `active`) VALUES (django.contrib.admin, False); args=('django.contrib.admin', False)
+[django.db.backends]: (0.001) INSERT INTO `rapidsms_app` (`module`, `active`) VALUES (django.contrib.sessions, False); args=('django.contrib.sessions', False)
+[django.db.backends]: (0.000) INSERT INTO `rapidsms_app` (`module`, `active`) VALUES (django.contrib.contenttypes, False); args=('django.contrib.contenttypes', False)
+[django.db.backends]: (0.000) INSERT INTO `rapidsms_app` (`module`, `active`) VALUES (rapidsms.contrib.default, False); args=('rapidsms.contrib.default', False)
+[django.db.backends]: (0.000) INSERT INTO `rapidsms_app` (`module`, `active`) VALUES (rapidsms.contrib.export, False); args=('rapidsms.contrib.export', False)
+[django.db.backends]: (0.000) INSERT INTO `rapidsms_app` (`module`, `active`) VALUES (rapidsms.contrib.messagelog, False); args=('rapidsms.contrib.messagelog', False)
+[django.db.backends]: (0.000) INSERT INTO `rapidsms_app` (`module`, `active`) VALUES (rapidsms.contrib.echo, False); args=('rapidsms.contrib.echo', False)
+[router]: Starting RapidSMS...
+[router]: starting backend
+[backend/att]: Connecting and booting via pyGSM...
+[backend/att]: debug: Booting
+[backend/att]: debug: Connecting
+[backend/att]: write: 'ATE0\r'
+[router]: starting backend
+[app/handlers]: Registered: EchoHandler, PingHandler
+[app/ajax]: An exception occurred
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/RapidSMS-0.9.6a-py2.7.egg/rapidsms/router.py", line 195, in _start_all_apps
+    app.start()
+  File "/usr/local/lib/python2.7/dist-packages/RapidSMS-0.9.6a-py2.7.egg/rapidsms/contrib/ajax/app.py", line 214, in start
+    self.RequestHandler)
+  File "/usr/lib/python2.7/SocketServer.py", line 408, in __init__
+    self.server_bind()
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 108, in server_bind
+    SocketServer.TCPServer.server_bind(self)
+  File "/usr/lib/python2.7/SocketServer.py", line 419, in server_bind
+    self.socket.bind(self.server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 98] Address already in use
+[backend/att]: read: '\r\n'
+[router]: Started
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMEE=1\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+WIND=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'ERROR\r\n'
+[backend/att]: write: 'AT+CSMS=1\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '+CSMS: 1,1,1\r\n'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGF=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CNMI=2,2,0,0,0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '+CMS ERROR: 303\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: debug: Booting
+[backend/att]: debug: Connecting
+[backend/att]: write: 'ATE0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMEE=1\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+WIND=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'ERROR\r\n'
+[backend/att]: write: 'AT+CSMS=1\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '+CSMS: 1,1,1\r\n'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGF=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CNMI=2,2,0,0,0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: '+CMS ERROR: 303\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: Polling modem for messages
+[backend/att]: write: 'AT\r'
+[backend/att]: read: '\r\n'
+[backend/att]: read: 'OK\r\n'
+[backend/att]: write: 'AT+CMGL=0\r'
+[backend/att]: read: '\r\n'
